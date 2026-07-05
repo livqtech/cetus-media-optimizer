@@ -1,0 +1,491 @@
+# Copyright (C) 2026 Catalisi
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cetus Media Optimizer 2.2.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cetus-media-optimizer\n"
+"Last-Translator: Catalisi <info@catalisi.dev>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-21T19:38:47+00:00\n"
+"PO-Revision-Date: 2026-06-21 00:00+0000\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cetus-media-optimizer\n"
+
+#. Plugin Name of the plugin
+msgid "Cetus Media Optimizer"
+msgstr "Cetus Media Optimizer"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/catalisidev/cetus-media-optimizer"
+msgstr ""
+
+#. Description of the plugin
+msgid "Advanced media optimizer: converts images to AVIF/WebP, auto-generates Alt Text via AI (Gemini / OpenAI), detects orphan files and manages your media library. Evolution of Cetus WebP Converter."
+msgstr "Optimizador multimedia avanzado: convierte imágenes a AVIF/WebP, genera automáticamente texto alternativo mediante IA (Gemini / OpenAI), detecta archivos huérfanos y gestiona tu biblioteca multimedia. Evolución de Cetus WebP Converter."
+
+#. Author of the plugin
+msgid "Catalisi"
+msgstr "Catalisi"
+
+#. Author URI of the plugin
+msgid "https://github.com/catalisidev"
+msgstr ""
+
+msgid "Every 5 minutes (Cetus MO)"
+msgstr "Cada 5 minutos (Cetus MO)"
+
+msgid "A process is already running. Use Pause or Stop before restarting."
+msgstr "Ya hay un proceso en ejecución. Use Pausa o Detener antes de reiniciar."
+
+msgid "No images to optimize found in the library."
+msgstr "No se encontraron imágenes para optimizar en la biblioteca."
+
+#, php-format
+msgid "Process started. %d images queued."
+msgstr "Proceso iniciado. %d imágenes en cola."
+
+msgid "No active process."
+msgstr "Ningún proceso activo."
+
+msgid "No process running."
+msgstr "Ningún proceso en ejecución."
+
+msgid "Process paused."
+msgstr "Proceso pausado."
+
+msgid "No paused process to resume."
+msgstr "Ningún proceso en pausa para reanudar."
+
+msgid "Lock active: cannot resume."
+msgstr "Bloqueo activo: no se puede reanudar."
+
+msgid "Process resumed."
+msgstr "Proceso reanudado."
+
+msgid "Process stopped and queue cleared."
+msgstr "Proceso detenido y cola vaciada."
+
+#, php-format
+msgid "Found %d orphan files."
+msgstr "Se encontraron %d archivos huérfanos."
+
+msgid "No orphan files found."
+msgstr "No se encontraron archivos huérfanos."
+
+#, php-format
+msgid "%1$d orphan files optimized. Savings: %2$s MB."
+msgstr "%1$d archivos huérfanos optimizados. Ahorro: %2$s MB."
+
+msgid "Insufficient permissions."
+msgstr "Permisos insuficientes."
+
+#, php-format
+msgid "%1$d files deleted. %2$d errors."
+msgstr "%1$d archivos eliminados. %2$d errores."
+
+msgid "Invalid request (nonce expired or missing)."
+msgstr "Solicitud no válida (nonce caducado o ausente)."
+
+msgid "Cetus Media"
+msgstr "Cetus Media"
+
+msgid "Start Optimization"
+msgstr "Iniciar Optimización"
+
+msgid "Pause"
+msgstr "Pausar"
+
+msgid "Resume"
+msgstr "Reanudar"
+
+msgid "Stop"
+msgstr "Detener"
+
+msgid "Scanning…"
+msgstr "Escaneando…"
+
+msgid "Processing…"
+msgstr "Procesando…"
+
+msgid "Done!"
+msgstr "¡Completado!"
+
+msgid "Server communication error."
+msgstr "Error de comunicación con el servidor."
+
+msgid "Are you sure you want to optimize the orphan files found?"
+msgstr "¿Está seguro de que desea optimizar los archivos huérfanos encontrados?"
+
+msgid "Settings saved."
+msgstr "Ajustes guardados."
+
+msgid "Valid key format."
+msgstr "Formato de clave válido."
+
+msgid "Invalid key format."
+msgstr "Formato de clave no válido."
+
+msgid "Access denied."
+msgstr "Acceso denegado."
+
+msgid "Server Diagnosis"
+msgstr "Diagnóstico del Servidor"
+
+msgid "Preferences"
+msgstr "Preferencias"
+
+msgid "Library Management"
+msgstr "Gestión de Biblioteca"
+
+msgid "Server correctly configured"
+msgstr "Servidor correctamente configurado"
+
+msgid "all required libraries are available."
+msgstr "todas las bibliotecas necesarias están disponibles."
+
+msgid "Partial configuration"
+msgstr "Configuración parcial"
+
+msgid "some features may not be available."
+msgstr "algunas funcionalidades podrían no estar disponibles."
+
+msgid "Component"
+msgstr "Componente"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Notes"
+msgstr "Notas"
+
+msgid "Go to Preferences →"
+msgstr "Ir a Preferencias →"
+
+msgid "PHP Version"
+msgstr "Versión PHP"
+
+msgid "Requires PHP 8.0 or higher."
+msgstr "Requiere PHP 8.0 o superior."
+
+msgid "Imagick Extension"
+msgstr "Extensión Imagick"
+
+#, php-format
+msgid "Available (v%s)"
+msgstr "Disponible (v%s)"
+
+msgid "Not available"
+msgstr "No disponible"
+
+msgid "Contact your hosting provider to enable Imagick."
+msgstr "Contacte con su proveedor de hosting para habilitar Imagick."
+
+msgid "GD Extension"
+msgstr "Extensión GD"
+
+msgid "Available"
+msgstr "Disponible"
+
+msgid "WebP Support (Imagick)"
+msgstr "Soporte WebP (Imagick)"
+
+msgid "Supported"
+msgstr "Compatible"
+
+msgid "Not supported"
+msgstr "No compatible"
+
+msgid "Available via GD as fallback."
+msgstr "Disponible mediante GD como alternativa."
+
+msgid "WebP Support (GD)"
+msgstr "Soporte WebP (GD)"
+
+msgid "AVIF Support (Imagick)"
+msgstr "Soporte AVIF (Imagick)"
+
+msgid "Imagick declares AVIF support but real encoding produces empty files (libheif not working). The plugin will fall back to WebP."
+msgstr "Imagick declara soporte AVIF pero la codificación real produce archivos vacíos (libheif no funciona). El plugin usará WebP como alternativa."
+
+msgid "Requires libheif/libavif compiled with Imagick."
+msgstr "Requiere libheif/libavif compilado con Imagick."
+
+msgid "AVIF Support (GD)"
+msgstr "Soporte AVIF (GD)"
+
+msgid "Requires PHP ≥ 8.1 with libavif."
+msgstr "Requiere PHP ≥ 8.1 con libavif."
+
+msgid "Automatic (AVIF if available, otherwise WebP)"
+msgstr "Automático (AVIF si está disponible, si no WebP)"
+
+msgid "AVIF only"
+msgstr "Solo AVIF"
+
+msgid "WebP only"
+msgstr "Solo WebP"
+
+msgid "No conversion (Alt Text AI only)"
+msgstr "Sin conversión (solo Texto Alternativo IA)"
+
+msgid "Automatic (from WordPress locale)"
+msgstr "Automático (desde el idioma de WordPress)"
+
+msgid "API key active: Alt Text will be generated automatically on every new upload."
+msgstr "Clave API activa: el texto alternativo se generará automáticamente en cada nueva subida."
+
+msgid "Enter at least one API key to enable automatic Alt Text generation."
+msgstr "Introduzca al menos una clave API para habilitar la generación automática de texto alternativo."
+
+msgid "Output Format"
+msgstr "Formato de Salida"
+
+msgid "Conversion format"
+msgstr "Formato de conversión"
+
+msgid "\"Automatic\" selects AVIF if the server supports it, WebP as fallback."
+msgstr "\"Automático\" selecciona AVIF si el servidor lo admite, WebP como alternativa."
+
+msgid "New Uploads"
+msgstr "Nuevas Subidas"
+
+msgid "Automatically convert new images on upload"
+msgstr "Convertir automáticamente las nuevas imágenes al subirlas"
+
+msgid "Not available when format is set to \"No conversion\"."
+msgstr "No disponible cuando el formato está configurado como \"Sin conversión\"."
+
+msgid "Conversion Quality"
+msgstr "Calidad de Conversión"
+
+msgid "Higher values = better quality but larger files (default: 82)."
+msgstr "Valores más altos = mejor calidad pero archivos más grandes (predeterminado: 82)."
+
+msgid "Higher values = better quality but larger files (default: 75)."
+msgstr "Valores más altos = mejor calidad pero archivos más grandes (predeterminado: 75)."
+
+msgid "AI Assistant – Alt Text Generation"
+msgstr "Asistente IA – Generación de Texto Alternativo"
+
+msgid "Monitor your API key quota limits. High usage can generate \"Quota Exceeded\" errors (429)."
+msgstr "Controle los límites de cuota de sus claves API. Un uso elevado puede generar errores \"Quota Exceeded\" (429)."
+
+msgid "Preferred AI provider"
+msgstr "Proveedor IA preferido"
+
+msgid "AI provider"
+msgstr "Proveedor IA"
+
+msgid "Google Gemini (gemini-1.5-flash)"
+msgstr "Google Gemini (gemini-1.5-flash)"
+
+msgid "OpenAI (gpt-4o-mini)"
+msgstr "OpenAI (gpt-4o-mini)"
+
+msgid "Automatic fallback"
+msgstr "Alternativa automática"
+
+msgid "Enable automatic fallback to the other provider on 429 errors"
+msgstr "Habilitar alternativa automática al otro proveedor en caso de errores 429"
+
+msgid "Google Gemini API Key"
+msgstr "Clave API de Google Gemini"
+
+msgid "Verify"
+msgstr "Verificar"
+
+msgid "Expected format: AIzaSy… (39 characters). Get a key from Google AI Studio."
+msgstr "Formato esperado: AIzaSy… (39 caracteres). Obtenga una clave desde Google AI Studio."
+
+msgid "OpenAI API Key"
+msgstr "Clave API de OpenAI"
+
+msgid "Expected format: sk-… Get a key from platform.openai.com."
+msgstr "Formato esperado: sk-… Obtenga una clave desde platform.openai.com."
+
+msgid "Alt Text AI Language"
+msgstr "Idioma del Texto Alternativo IA"
+
+#, php-format
+msgid "With \"Automatic\" the current WordPress locale is used (%s)."
+msgstr "Con \"Automático\" se utiliza el idioma actual de WordPress (%s)."
+
+msgid "Custom prompt"
+msgstr "Indicación personalizada"
+
+msgid "Leave empty to use the default prompt."
+msgstr "Deje vacío para usar la indicación predeterminada."
+
+msgid "Optional — overrides the language and default prompt. Example: \"Describe this image in English in one sentence.\""
+msgstr "Opcional — reemplaza el idioma y la indicación predeterminada. Ejemplo: \"Describe this image in English in one sentence.\""
+
+msgid "Background (WP-Cron)"
+msgstr "En segundo plano (WP-Cron)"
+
+msgid "Process the library in the background via WP-Cron (every 5 min) without keeping the browser open"
+msgstr "Procesar la biblioteca en segundo plano mediante WP-Cron (cada 5 min) sin mantener el navegador abierto"
+
+msgid "Ideal for very large libraries or hosting with strict timeouts."
+msgstr "Ideal para bibliotecas muy grandes o alojamientos con tiempos de espera estrictos."
+
+msgid "Save Preferences"
+msgstr "Guardar Preferencias"
+
+msgid "Go to Library Management →"
+msgstr "Ir a Gestión de Biblioteca →"
+
+msgid "Library Statistics"
+msgstr "Estadísticas de Biblioteca"
+
+msgid "Images in library"
+msgstr "Imágenes en la biblioteca"
+
+msgid "To convert"
+msgstr "Por convertir"
+
+msgid "Total space"
+msgstr "Espacio total"
+
+msgid "Original JPG/PNG/GIF"
+msgstr "Originales JPG/PNG/GIF"
+
+msgid "WebP files"
+msgstr "Archivos WebP"
+
+msgid "AVIF files"
+msgstr "Archivos AVIF"
+
+msgid "Current session savings"
+msgstr "Ahorro de la sesión actual"
+
+msgid "Cumulative total savings"
+msgstr "Ahorro total acumulado"
+
+msgid "Start Library Optimization"
+msgstr "Iniciar Optimización de Biblioteca"
+
+msgid "Orphan File Analysis"
+msgstr "Análisis de Archivos Huérfanos"
+
+msgid "Search for images in the uploads folder not registered in the WordPress database."
+msgstr "Buscar imágenes en la carpeta de subidas no registradas en la base de datos de WordPress."
+
+msgid "Scan Orphan Files"
+msgstr "Escanear Archivos Huérfanos"
+
+msgid "Optimize orphan files found"
+msgstr "Optimizar archivos huérfanos encontrados"
+
+msgid "Alt Text Generation"
+msgstr "Generación de Texto Alternativo"
+
+msgid "images without Alt Text"
+msgstr "imágenes sin texto alternativo"
+
+#, php-format
+msgid "This operation will make API calls to OpenAI for each image. Check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAI pricing page</a> before proceeding."
+msgstr "Esta operación realizará llamadas a la API de OpenAI para cada imagen. Consulte la <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">página de precios de OpenAI</a> antes de continuar."
+
+#, php-format
+msgid "This operation will make API calls to Google Gemini for each image. Check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Google AI pricing page</a> before proceeding."
+msgstr "Esta operación realizará llamadas a la API de Google Gemini para cada imagen. Consulte la <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">página de precios de Google AI</a> antes de continuar."
+
+msgid "All images in the library already have an Alt Text."
+msgstr "Todas las imágenes de la biblioteca ya tienen texto alternativo."
+
+msgid "Generate Alt Text for library images that do not have one yet. The process uses the AI provider configured in Preferences."
+msgstr "Generar texto alternativo para las imágenes de la biblioteca que aún no lo tienen. El proceso utiliza el proveedor de IA configurado en Preferencias."
+
+msgid "Generate Alt Text for images without a description"
+msgstr "Generar texto alternativo para imágenes sin descripción"
+
+#, php-format
+msgid "Configure at least one API key in %s to enable Alt Text generation."
+msgstr "Configure al menos una clave API en %s para habilitar la generación de texto alternativo."
+
+msgid "Restore Originals"
+msgstr "Restaurar Originales"
+
+msgid "Delete all WebP and AVIF files generated by the plugin. Original JPG/PNG/GIF files are never touched. Also resets the log and savings counter."
+msgstr "Eliminar todos los archivos WebP y AVIF generados por el plugin. Los archivos originales JPG/PNG/GIF nunca se tocan. También restablece el registro y el contador de ahorros."
+
+msgid "Delete all converted files"
+msgstr "Eliminar todos los archivos convertidos"
+
+msgid "Conversion Log"
+msgstr "Registro de Conversiones"
+
+msgid "Clear log"
+msgstr "Limpiar registro"
+
+msgid "Telemetry"
+msgstr "Telemetría"
+
+msgid "Anonymous crash reports"
+msgstr "Informes de fallos anónimos"
+
+msgid "Allow Cetus to send anonymous crash reports to help us improve the plugin."
+msgstr "Permitir a Cetus enviar informes de fallos anónimos para ayudarnos a mejorar el plugin."
+
+msgid "Error logs are fully anonymized and securely processed via Sentry. No IP address or personal data is ever collected. Read the <a href=\"https://sentry.io/privacy/\" target=\"_blank\" rel=\"noopener noreferrer\">Sentry Privacy Policy</a>."
+msgstr "Los registros de errores están completamente anonimizados y se procesan de forma segura mediante Sentry. No se recopila ninguna dirección IP ni dato personal. Lea la <a href=\"https://sentry.io/privacy/\" target=\"_blank\" rel=\"noopener noreferrer\">Política de Privacidad de Sentry</a>."
+
+msgid "Active — reports sent to Sentry."
+msgstr "Activo — informes enviados a Sentry."
+
+msgid "Disabled."
+msgstr "Desactivado."
+
+msgid "Invalid nonce."
+msgstr "Nonce no válido."
+
+msgid "Settings saved successfully."
+msgstr "Ajustes guardados correctamente."
+
+msgid "Exclude from conversion and Alt Text AI"
+msgstr "Excluir de conversión y Texto Alternativo IA"
+
+msgid "If checked, this image is skipped both during batch conversion and on upload."
+msgstr "Si está marcado, esta imagen se omite tanto durante la conversión por lotes como al subirla."
+
+msgid "No conversions recorded yet."
+msgstr "Aún no se han registrado conversiones."
+
+msgid "Date/Time"
+msgstr "Fecha/Hora"
+
+msgid "File"
+msgstr "Archivo"
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "Savings"
+msgstr "Ahorro"
+
+#, php-format
+msgid "Showing the last 50 of %d total entries."
+msgstr "Mostrando las últimas 50 de %d entradas totales."
+
+msgid "Log cleared."
+msgstr "Registro vaciado."
+
+msgid "Cetus Media Optimizer — Error Telemetry"
+msgstr "Cetus Media Optimizer — Telemetría de Errores"
+
+msgid "If the site administrator has enabled telemetry in the settings of <strong>Cetus Media Optimizer</strong>, the plugin sends anonymous PHP error reports to the <a href=\"https://sentry.io\" rel=\"noopener noreferrer\" target=\"_blank\">Sentry</a> service (sentry.io)."
+msgstr "Si el administrador del sitio ha habilitado la telemetría en los ajustes de <strong>Cetus Media Optimizer</strong>, el plugin envía informes de errores PHP anónimos al servicio <a href=\"https://sentry.io\" rel=\"noopener noreferrer\" target=\"_blank\">Sentry</a> (sentry.io)."
+
+msgid "The transmitted data includes exclusively: PHP error type, stack trace limited to plugin files, WordPress version, PHP version and plugin version. No IP address, username, site content or personal data is ever transmitted."
+msgstr "Los datos transmitidos incluyen exclusivamente: tipo de error PHP, stack trace limitado a los archivos del plugin, versión de WordPress, versión de PHP y versión del plugin. Nunca se transmite ninguna dirección IP, nombre de usuario, contenido del sitio ni dato personal."
+
+msgid "This feature is disabled by default and requires explicit administrator consent. It can be disabled at any time from Cetus Media → Preferences → Telemetry."
+msgstr "Esta función está desactivada por defecto y requiere el consentimiento explícito del administrador. Puede desactivarse en cualquier momento desde Cetus Media → Preferencias → Telemetría."
+
+#, php-format
+msgid "For more information see the <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">Sentry Privacy Policy</a>."
+msgstr "Para más información consulte la <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">Política de Privacidad de Sentry</a>."

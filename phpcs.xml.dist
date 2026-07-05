@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ruleset name="Cetus Media Optimizer">
+  <description>PHPCS ruleset — WordPress Coding Standards for Cetus Media Optimizer.</description>
+
+  <!-- Scope: only plugin source files -->
+  <file>.</file>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>*.min.js</exclude-pattern>
+  <exclude-pattern>*.min.css</exclude-pattern>
+
+  <!-- Target PHP version -->
+  <config name="testVersion" value="8.0-"/>
+
+  <!-- WordPress Coding Standards -->
+  <rule ref="WordPress">
+    <!-- Inline JS/CSS is handled inside PHP strings; tab indentation doesn't apply. -->
+    <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+    <!-- Short array syntax [] is modern PHP best practice and used throughout WP core since 4.x. -->
+    <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+    <!-- File names follow WordPress plugin conventions (class-slug.php) not PSR-4. -->
+    <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+    <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    <!-- Short ternary (?:) is a legitimate PHP operator; not ambiguous in context. -->
+    <exclude name="Universal.Operators.DisallowShortTernary"/>
+  </rule>
+
+  <!-- WordPress core minimum version -->
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="cetus-media-optimizer"/>
+      </property>
+    </properties>
+  </rule>
+
+  <!-- Enforce the plugin prefix on all global symbols -->
+  <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+    <properties>
+      <property name="prefixes" type="array">
+        <element value="cetus_mo_"/>
+        <element value="cetus_media_"/>
+        <element value="Cetus_MO_"/>
+        <element value="CETUS_MO_"/>
+      </property>
+    </properties>
+  </rule>
+
+  <!-- Minimum WP version for deprecated functions -->
+  <rule ref="WordPress.WP.DeprecatedFunctions"/>
+</ruleset>

@@ -1,0 +1,35 @@
+# Files and directories excluded from the WordPress.org SVN distribution.
+# Used by the 10up GitHub Action (action-wordpress-plugin-deploy).
+
+# Development tooling
+.github/
+.git/
+node_modules/
+
+# vendor/ NON è escluso: le dipendenze di produzione (Sentry SDK) vengono
+# installate con "composer install --no-dev" nel workflow di deploy e
+# devono essere incluse nel pacchetto SVN di WordPress.org.
+# Escludi solo le cartelle di test interne di Sentry.
+vendor/sentry/sentry/dev-packages/
+vendor/sentry/sentry/tests/
+vendor/sentry/sentry/scripts/
+vendor/sentry/sentry/.git-blame-ignore-revs
+
+# Configuration files (not needed in production).
+# composer.json is intentionally kept: Plugin Check flags a bundled vendor/
+# directory without an accompanying composer.json (missing_composer_json_file).
+composer.lock
+phpcs.xml.dist
+.distignore
+.gitignore
+.editorconfig
+
+# CI / scripts
+Makefile
+bin/
+
+# IDE / AI tooling
+.claude/
+
+# Source maps and build artifacts
+*.map

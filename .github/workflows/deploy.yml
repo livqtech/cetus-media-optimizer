@@ -1,0 +1,109 @@
+name: Deploy to WordPress.org
+
+# Triggered automatically when a version tag (v2.0.0, v2.1.0, …) is pushed.
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 1. Code quality gate — PHPCS (WordPress Coding Standards)
+  # ─────────────────────────────────────────────────────────────────────────────
+  phpcs:
+    name: PHP Coding Standards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-scripts
+
+      - name: Run PHPCS
+        run: composer phpcs
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 2. Build translation template (POT)
+  # ─────────────────────────────────────────────────────────────────────────────
+  pot:
+    name: Update POT file
+    runs-on: ubuntu-latest
+    needs: phpcs
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup WP-CLI
+        run: |
+          curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+          chmod +x wp-cli.phar
+          sudo mv wp-cli.phar /usr/local/bin/wp
+
+      - name: Regenerate POT
+        run: |
+          wp i18n make-pot . languages/cetus-media-optimizer.pot \
+            --domain=cetus-media-optimizer \
+            --exclude=vendor,node_modules \
+            --allow-root
+
+      - name: Commit updated POT (if changed)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add languages/cetus-media-optimizer.pot
+          git diff --cached --quiet || git commit -m "chore: update POT file for ${{ github.ref_name }}"
+          git push origin HEAD:main || true
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # 3. Deploy to WordPress.org SVN
+  # ─────────────────────────────────────────────────────────────────────────────
+  deploy:
+    name: WordPress.org SVN Deploy
+    runs-on: ubuntu-latest
+    needs: [phpcs, pot]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Required secrets in the repository settings:
+      #   WPORG_USERNAME — your wordpress.org SVN username
+      #   WPORG_PASSWORD — your wordpress.org SVN password (or app password)
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: composer:v2
+
+      # Installa solo le dipendenze di produzione (Sentry SDK).
+      # La cartella vendor/ viene inclusa nel pacchetto SVN perché
+      # WordPress.org non esegue composer install autonomamente.
+      - name: Install production dependencies
+        run: composer install --no-dev --optimize-autoloader --no-interaction --no-progress
+
+      # Inject the real Sentry DSN (stored as a GitHub Secret) into the source
+      # file before deploying to WordPress.org SVN. The placeholder %%SENTRY_DSN%%
+      # is never committed to the public repository.
+      - name: Inject Sentry DSN
+        env:
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+        run: |
+          sed -i "s|%%SENTRY_DSN%%|${SENTRY_DSN}|g" includes/class-cetus-telemetry.php
+
+      - name: Deploy plugin to WordPress.org
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_PASSWORD: ${{ secrets.WPORG_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.WPORG_USERNAME }}
+          SLUG: cetus-media-optimizer

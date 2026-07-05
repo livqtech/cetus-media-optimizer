@@ -1,0 +1,672 @@
+# Copyright (C) 2026 Catalisi
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cetus Media Optimizer 2.2.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cetus-media-optimizer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-21T19:38:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cetus-media-optimizer\n"
+
+#. Plugin Name of the plugin
+#: cetus-media-optimizer.php
+#: includes/class-cetus-admin.php:71
+#: includes/class-cetus-admin.php:212
+#: includes/class-cetus-admin.php:1070
+#: includes/class-cetus-telemetry.php:189
+msgid "Cetus Media Optimizer"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: cetus-media-optimizer.php
+msgid "https://github.com/catalisidev/cetus-media-optimizer"
+msgstr ""
+
+#. Description of the plugin
+#: cetus-media-optimizer.php
+msgid "Advanced media optimizer: converts images to AVIF/WebP, auto-generates Alt Text via AI (Gemini / OpenAI), detects orphan files and manages your media library. Evolution of Cetus WebP Converter."
+msgstr ""
+
+#. Author of the plugin
+#: cetus-media-optimizer.php
+msgid "Catalisi"
+msgstr ""
+
+#. Author URI of the plugin
+#: cetus-media-optimizer.php
+msgid "https://github.com/catalisidev"
+msgstr ""
+
+#: cetus-media-optimizer.php:198
+msgid "Every 5 minutes (Cetus MO)"
+msgstr ""
+
+#: includes/class-bulk-processor.php:97
+msgid "A process is already running. Use Pause or Stop before restarting."
+msgstr ""
+
+#: includes/class-bulk-processor.php:106
+msgid "No images to optimize found in the library."
+msgstr ""
+
+#. translators: %d: numero di immagini in coda
+#: includes/class-bulk-processor.php:137
+#, php-format
+msgid "Process started. %d images queued."
+msgstr ""
+
+#: includes/class-bulk-processor.php:161
+msgid "No active process."
+msgstr ""
+
+#: includes/class-bulk-processor.php:247
+msgid "No process running."
+msgstr ""
+
+#: includes/class-bulk-processor.php:254
+msgid "Process paused."
+msgstr ""
+
+#: includes/class-bulk-processor.php:268
+msgid "No paused process to resume."
+msgstr ""
+
+#: includes/class-bulk-processor.php:272
+msgid "Lock active: cannot resume."
+msgstr ""
+
+#: includes/class-bulk-processor.php:279
+msgid "Process resumed."
+msgstr ""
+
+#: includes/class-bulk-processor.php:297
+msgid "Process stopped and queue cleared."
+msgstr ""
+
+#. translators: %d: numero file orfani
+#: includes/class-bulk-processor.php:352
+#, php-format
+msgid "Found %d orphan files."
+msgstr ""
+
+#: includes/class-bulk-processor.php:371
+msgid "No orphan files found."
+msgstr ""
+
+#. translators: 1: file convertiti 2: MB risparmiati
+#: includes/class-bulk-processor.php:391
+#, php-format
+msgid "%1$d orphan files optimized. Savings: %2$s MB."
+msgstr ""
+
+#: includes/class-bulk-processor.php:510
+#: includes/class-bulk-processor.php:623
+#: includes/class-cetus-admin.php:932
+msgid "Insufficient permissions."
+msgstr ""
+
+#. translators: 1: file eliminati 2: errori
+#: includes/class-bulk-processor.php:524
+#, php-format
+msgid "%1$d files deleted. %2$d errors."
+msgstr ""
+
+#: includes/class-bulk-processor.php:629
+msgid "Invalid request (nonce expired or missing)."
+msgstr ""
+
+#: includes/class-cetus-admin.php:72
+msgid "Cetus Media"
+msgstr ""
+
+#: includes/class-cetus-admin.php:167
+msgid "Start Optimization"
+msgstr ""
+
+#: includes/class-cetus-admin.php:168
+#: includes/class-cetus-admin.php:709
+msgid "Pause"
+msgstr ""
+
+#: includes/class-cetus-admin.php:169
+#: includes/class-cetus-admin.php:713
+msgid "Resume"
+msgstr ""
+
+#: includes/class-cetus-admin.php:170
+#: includes/class-cetus-admin.php:717
+msgid "Stop"
+msgstr ""
+
+#: includes/class-cetus-admin.php:171
+msgid "Scanning…"
+msgstr ""
+
+#: includes/class-cetus-admin.php:172
+msgid "Processing…"
+msgstr ""
+
+#: includes/class-cetus-admin.php:173
+msgid "Done!"
+msgstr ""
+
+#: includes/class-cetus-admin.php:174
+msgid "Server communication error."
+msgstr ""
+
+#: includes/class-cetus-admin.php:175
+msgid "Are you sure you want to optimize the orphan files found?"
+msgstr ""
+
+#: includes/class-cetus-admin.php:176
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-cetus-admin.php:177
+msgid "Valid key format."
+msgstr ""
+
+#: includes/class-cetus-admin.php:178
+msgid "Invalid key format."
+msgstr ""
+
+#: includes/class-cetus-admin.php:205
+msgid "Access denied."
+msgstr ""
+
+#: includes/class-cetus-admin.php:220
+msgid "Server Diagnosis"
+msgstr ""
+
+#: includes/class-cetus-admin.php:225
+#: includes/class-cetus-admin.php:833
+msgid "Preferences"
+msgstr ""
+
+#: includes/class-cetus-admin.php:230
+msgid "Library Management"
+msgstr ""
+
+#: includes/class-cetus-admin.php:270
+msgid "Server correctly configured"
+msgstr ""
+
+#: includes/class-cetus-admin.php:270
+msgid "all required libraries are available."
+msgstr ""
+
+#: includes/class-cetus-admin.php:275
+msgid "Partial configuration"
+msgstr ""
+
+#: includes/class-cetus-admin.php:275
+msgid "some features may not be available."
+msgstr ""
+
+#: includes/class-cetus-admin.php:283
+msgid "Component"
+msgstr ""
+
+#: includes/class-cetus-admin.php:284
+#: includes/class-cetus-admin.php:1148
+msgid "Status"
+msgstr ""
+
+#: includes/class-cetus-admin.php:285
+msgid "Notes"
+msgstr ""
+
+#: includes/class-cetus-admin.php:308
+msgid "Go to Preferences →"
+msgstr ""
+
+#: includes/class-cetus-admin.php:335
+msgid "PHP Version"
+msgstr ""
+
+#: includes/class-cetus-admin.php:338
+msgid "Requires PHP 8.0 or higher."
+msgstr ""
+
+#: includes/class-cetus-admin.php:341
+msgid "Imagick Extension"
+msgstr ""
+
+#: includes/class-cetus-admin.php:344
+#, php-format
+msgid "Available (v%s)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:345
+#: includes/class-cetus-admin.php:351
+msgid "Not available"
+msgstr ""
+
+#: includes/class-cetus-admin.php:346
+msgid "Contact your hosting provider to enable Imagick."
+msgstr ""
+
+#: includes/class-cetus-admin.php:349
+msgid "GD Extension"
+msgstr ""
+
+#: includes/class-cetus-admin.php:351
+msgid "Available"
+msgstr ""
+
+#: includes/class-cetus-admin.php:355
+msgid "WebP Support (Imagick)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:357
+#: includes/class-cetus-admin.php:363
+#: includes/class-cetus-admin.php:369
+#: includes/class-cetus-admin.php:380
+msgid "Supported"
+msgstr ""
+
+#: includes/class-cetus-admin.php:357
+#: includes/class-cetus-admin.php:363
+#: includes/class-cetus-admin.php:369
+#: includes/class-cetus-admin.php:380
+msgid "Not supported"
+msgstr ""
+
+#: includes/class-cetus-admin.php:358
+msgid "Available via GD as fallback."
+msgstr ""
+
+#: includes/class-cetus-admin.php:361
+msgid "WebP Support (GD)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:367
+msgid "AVIF Support (Imagick)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:373
+msgid "Imagick declares AVIF support but real encoding produces empty files (libheif not working). The plugin will fall back to WebP."
+msgstr ""
+
+#: includes/class-cetus-admin.php:374
+msgid "Requires libheif/libavif compiled with Imagick."
+msgstr ""
+
+#: includes/class-cetus-admin.php:378
+msgid "AVIF Support (GD)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:381
+msgid "Requires PHP ≥ 8.1 with libavif."
+msgstr ""
+
+#: includes/class-cetus-admin.php:408
+msgid "Automatic (AVIF if available, otherwise WebP)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:409
+msgid "AVIF only"
+msgstr ""
+
+#: includes/class-cetus-admin.php:410
+msgid "WebP only"
+msgstr ""
+
+#: includes/class-cetus-admin.php:411
+msgid "No conversion (Alt Text AI only)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:415
+msgid "Automatic (from WordPress locale)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:430
+msgid "API key active: Alt Text will be generated automatically on every new upload."
+msgstr ""
+
+#: includes/class-cetus-admin.php:435
+msgid "Enter at least one API key to enable automatic Alt Text generation."
+msgstr ""
+
+#: includes/class-cetus-admin.php:439
+msgid "Output Format"
+msgstr ""
+
+#: includes/class-cetus-admin.php:442
+#: includes/class-cetus-admin.php:445
+msgid "Conversion format"
+msgstr ""
+
+#: includes/class-cetus-admin.php:453
+msgid "\"Automatic\" selects AVIF if the server supports it, WebP as fallback."
+msgstr ""
+
+#: includes/class-cetus-admin.php:458
+msgid "New Uploads"
+msgstr ""
+
+#: includes/class-cetus-admin.php:464
+msgid "Automatically convert new images on upload"
+msgstr ""
+
+#: includes/class-cetus-admin.php:467
+msgid "Not available when format is set to \"No conversion\"."
+msgstr ""
+
+#: includes/class-cetus-admin.php:473
+msgid "Conversion Quality"
+msgstr ""
+
+#: includes/class-cetus-admin.php:484
+msgid "Higher values = better quality but larger files (default: 82)."
+msgstr ""
+
+#: includes/class-cetus-admin.php:496
+msgid "Higher values = better quality but larger files (default: 75)."
+msgstr ""
+
+#: includes/class-cetus-admin.php:501
+msgid "AI Assistant – Alt Text Generation"
+msgstr ""
+
+#: includes/class-cetus-admin.php:504
+msgid "Monitor your API key quota limits. High usage can generate \"Quota Exceeded\" errors (429)."
+msgstr ""
+
+#: includes/class-cetus-admin.php:508
+msgid "Preferred AI provider"
+msgstr ""
+
+#: includes/class-cetus-admin.php:511
+msgid "AI provider"
+msgstr ""
+
+#: includes/class-cetus-admin.php:514
+msgid "Google Gemini (gemini-1.5-flash)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:518
+msgid "OpenAI (gpt-4o-mini)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:524
+msgid "Automatic fallback"
+msgstr ""
+
+#: includes/class-cetus-admin.php:528
+msgid "Enable automatic fallback to the other provider on 429 errors"
+msgstr ""
+
+#: includes/class-cetus-admin.php:533
+msgid "Google Gemini API Key"
+msgstr ""
+
+#: includes/class-cetus-admin.php:540
+#: includes/class-cetus-admin.php:555
+msgid "Verify"
+msgstr ""
+
+#: includes/class-cetus-admin.php:544
+msgid "Expected format: AIzaSy… (39 characters). Get a key from Google AI Studio."
+msgstr ""
+
+#: includes/class-cetus-admin.php:548
+msgid "OpenAI API Key"
+msgstr ""
+
+#: includes/class-cetus-admin.php:559
+msgid "Expected format: sk-… Get a key from platform.openai.com."
+msgstr ""
+
+#: includes/class-cetus-admin.php:563
+msgid "Alt Text AI Language"
+msgstr ""
+
+#: includes/class-cetus-admin.php:574
+#, php-format
+msgid "With \"Automatic\" the current WordPress locale is used (%s)."
+msgstr ""
+
+#: includes/class-cetus-admin.php:581
+msgid "Custom prompt"
+msgstr ""
+
+#: includes/class-cetus-admin.php:585
+msgid "Leave empty to use the default prompt."
+msgstr ""
+
+#: includes/class-cetus-admin.php:587
+msgid "Optional — overrides the language and default prompt. Example: \"Describe this image in English in one sentence.\""
+msgstr ""
+
+#: includes/class-cetus-admin.php:591
+msgid "Background (WP-Cron)"
+msgstr ""
+
+#: includes/class-cetus-admin.php:596
+msgid "Process the library in the background via WP-Cron (every 5 min) without keeping the browser open"
+msgstr ""
+
+#: includes/class-cetus-admin.php:598
+msgid "Ideal for very large libraries or hosting with strict timeouts."
+msgstr ""
+
+#: includes/class-cetus-admin.php:604
+#: includes/class-cetus-admin.php:918
+msgid "Save Preferences"
+msgstr ""
+
+#: includes/class-cetus-admin.php:609
+msgid "Go to Library Management →"
+msgstr ""
+
+#: includes/class-cetus-admin.php:646
+msgid "Library Statistics"
+msgstr ""
+
+#: includes/class-cetus-admin.php:651
+msgid "Images in library"
+msgstr ""
+
+#: includes/class-cetus-admin.php:655
+msgid "To convert"
+msgstr ""
+
+#: includes/class-cetus-admin.php:659
+msgid "Total space"
+msgstr ""
+
+#: includes/class-cetus-admin.php:663
+msgid "Original JPG/PNG/GIF"
+msgstr ""
+
+#: includes/class-cetus-admin.php:667
+msgid "WebP files"
+msgstr ""
+
+#: includes/class-cetus-admin.php:671
+msgid "AVIF files"
+msgstr ""
+
+#: includes/class-cetus-admin.php:675
+msgid "Current session savings"
+msgstr ""
+
+#: includes/class-cetus-admin.php:679
+msgid "Cumulative total savings"
+msgstr ""
+
+#: includes/class-cetus-admin.php:705
+msgid "Start Library Optimization"
+msgstr ""
+
+#: includes/class-cetus-admin.php:724
+msgid "Orphan File Analysis"
+msgstr ""
+
+#: includes/class-cetus-admin.php:725
+msgid "Search for images in the uploads folder not registered in the WordPress database."
+msgstr ""
+
+#: includes/class-cetus-admin.php:730
+msgid "Scan Orphan Files"
+msgstr ""
+
+#: includes/class-cetus-admin.php:738
+msgid "Optimize orphan files found"
+msgstr ""
+
+#: includes/class-cetus-admin.php:746
+msgid "Alt Text Generation"
+msgstr ""
+
+#: includes/class-cetus-admin.php:774
+msgid "images without Alt Text"
+msgstr ""
+
+#: includes/class-cetus-admin.php:782
+#, php-format
+msgid "This operation will make API calls to OpenAI for each image. Check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">OpenAI pricing page</a> before proceeding."
+msgstr ""
+
+#: includes/class-cetus-admin.php:791
+#, php-format
+msgid "This operation will make API calls to Google Gemini for each image. Check the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Google AI pricing page</a> before proceeding."
+msgstr ""
+
+#: includes/class-cetus-admin.php:803
+msgid "All images in the library already have an Alt Text."
+msgstr ""
+
+#: includes/class-cetus-admin.php:807
+msgid "Generate Alt Text for library images that do not have one yet. The process uses the AI provider configured in Preferences."
+msgstr ""
+
+#: includes/class-cetus-admin.php:812
+msgid "Generate Alt Text for images without a description"
+msgstr ""
+
+#. translators: link to Preferenze tab
+#: includes/class-cetus-admin.php:832
+#, php-format
+msgid "Configure at least one API key in %s to enable Alt Text generation."
+msgstr ""
+
+#: includes/class-cetus-admin.php:843
+msgid "Restore Originals"
+msgstr ""
+
+#: includes/class-cetus-admin.php:844
+msgid "Delete all WebP and AVIF files generated by the plugin. Original JPG/PNG/GIF files are never touched. Also resets the log and savings counter."
+msgstr ""
+
+#: includes/class-cetus-admin.php:848
+msgid "Delete all converted files"
+msgstr ""
+
+#: includes/class-cetus-admin.php:858
+msgid "Conversion Log"
+msgstr ""
+
+#: includes/class-cetus-admin.php:860
+msgid "Clear log"
+msgstr ""
+
+#: includes/class-cetus-admin.php:882
+msgid "Telemetry"
+msgstr ""
+
+#: includes/class-cetus-admin.php:885
+msgid "Anonymous crash reports"
+msgstr ""
+
+#: includes/class-cetus-admin.php:889
+msgid "Allow Cetus to send anonymous crash reports to help us improve the plugin."
+msgstr ""
+
+#: includes/class-cetus-admin.php:894
+msgid "Error logs are fully anonymized and securely processed via Sentry. No IP address or personal data is ever collected. Read the <a href=\"https://sentry.io/privacy/\" target=\"_blank\" rel=\"noopener noreferrer\">Sentry Privacy Policy</a>."
+msgstr ""
+
+#: includes/class-cetus-admin.php:908
+msgid "Active — reports sent to Sentry."
+msgstr ""
+
+#: includes/class-cetus-admin.php:911
+msgid "Disabled."
+msgstr ""
+
+#: includes/class-cetus-admin.php:937
+#: includes/class-cetus-admin.php:1038
+msgid "Invalid nonce."
+msgstr ""
+
+#: includes/class-cetus-admin.php:993
+msgid "Settings saved successfully."
+msgstr ""
+
+#: includes/class-cetus-admin.php:1090
+msgid "Exclude from conversion and Alt Text AI"
+msgstr ""
+
+#: includes/class-cetus-admin.php:1093
+msgid "If checked, this image is skipped both during batch conversion and on upload."
+msgstr ""
+
+#: includes/class-cetus-admin.php:1134
+msgid "No conversions recorded yet."
+msgstr ""
+
+#: includes/class-cetus-admin.php:1144
+msgid "Date/Time"
+msgstr ""
+
+#: includes/class-cetus-admin.php:1145
+msgid "File"
+msgstr ""
+
+#: includes/class-cetus-admin.php:1146
+msgid "Format"
+msgstr ""
+
+#: includes/class-cetus-admin.php:1147
+msgid "Savings"
+msgstr ""
+
+#. translators: %d: numero voci totali nel log
+#: includes/class-cetus-admin.php:1176
+#, php-format
+msgid "Showing the last 50 of %d total entries."
+msgstr ""
+
+#: includes/class-cetus-admin.php:1202
+msgid "Log cleared."
+msgstr ""
+
+#: includes/class-cetus-telemetry.php:159
+msgid "Cetus Media Optimizer — Error Telemetry"
+msgstr ""
+
+#: includes/class-cetus-telemetry.php:162
+msgid "If the site administrator has enabled telemetry in the settings of <strong>Cetus Media Optimizer</strong>, the plugin sends anonymous PHP error reports to the <a href=\"https://sentry.io\" rel=\"noopener noreferrer\" target=\"_blank\">Sentry</a> service (sentry.io)."
+msgstr ""
+
+#: includes/class-cetus-telemetry.php:169
+msgid "The transmitted data includes exclusively: PHP error type, stack trace limited to plugin files, WordPress version, PHP version and plugin version. No IP address, username, site content or personal data is ever transmitted."
+msgstr ""
+
+#: includes/class-cetus-telemetry.php:174
+msgid "This feature is disabled by default and requires explicit administrator consent. It can be disabled at any time from Cetus Media → Preferences → Telemetry."
+msgstr ""
+
+#. translators: %s: URL of Sentry privacy policy
+#: includes/class-cetus-telemetry.php:182
+#, php-format
+msgid "For more information see the <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">Sentry Privacy Policy</a>."
+msgstr ""
