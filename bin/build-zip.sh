@@ -55,7 +55,9 @@ find "${BUILD_DIR}/vendor" -type f \( \
   -name ".scrutinizer.yml" -o \
   -name ".travis.yml" -o \
   -name "phpstan.neon*" -o \
-  -name "psalm.xml*" \
+  -name "psalm.xml*" -o \
+  -name "mago.toml" -o \
+  -name "analysis-baseline.toml" \
   \) -delete 2>/dev/null || true
 find "${BUILD_DIR}" -name ".DS_Store" -delete 2>/dev/null || true
 

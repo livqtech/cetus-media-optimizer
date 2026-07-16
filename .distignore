@@ -14,6 +14,8 @@ vendor/sentry/sentry/dev-packages/
 vendor/sentry/sentry/tests/
 vendor/sentry/sentry/scripts/
 vendor/sentry/sentry/.git-blame-ignore-revs
+vendor/sentry/sentry/mago.toml
+vendor/sentry/sentry/analysis-baseline.toml
 
 # Configuration files (not needed in production).
 # composer.json is intentionally kept: Plugin Check flags a bundled vendor/
