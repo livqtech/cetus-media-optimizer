@@ -48,4 +48,6 @@ wp-config.php
 #/wp-content/themes
 vendor/
 .DS_Store
+.claude/
+memory/
 
